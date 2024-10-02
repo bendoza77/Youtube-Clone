@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 80px;
+    font-family: Roboto, serif;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
+}
+
+.phyton{
+    width: 100%;
+}
+
+.search-bar{
+    font-size: 15px;
+    display: block;
+    flex: 1;
+    width: 90px;
+    height: 40px;
+    text-align: 60px;
+    border: 1px solid rgb(96, 96, 96);
+}
+
+
+
+.video-aouthor{
+    width: 300px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+}
+
+p{
+    margin-top: 0;
+    font-family: Roboto, serif;
+    margin-bottom: 0;
+}
+
+.video-stats{
+    width: 300px;
+    color: rgb(96, 96, 96);
+}
+
+
+
+
+
+
+.profile-picture{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.video-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.phyton-row{
+    margin-bottom: 10px;
+}
+
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
+.mes{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    right: 70px;
+    top: 3px;
+}
+
+.videogrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+    cursor: pointer;
+}
+
+.hello-bro{
+    width: 1356px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.top-image{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom-width: 1px ;
+    border-bottom-style: solid ;
+    border-bottom-color: rgb(189, 186, 186) ;
+}
+
+.left-side{
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.right-side{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.center-side{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.youtube-logo{
+    height: 20px;
+    cursor: pointer;
+}
+
+.search-button{
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.voice-button{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+
+.search-icon{
+    height: 25px;
+}
+
+.youtube-icon{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.sidebar-icon{
+    height: 74px;
+    width: 72px;
+    margin-bottom: 1px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    background-color: white;
+}
+
+.sidebar .sidebar-icon div{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-family: 400;
+}
+
+
+.hamburger:hover,
+.voice-button:hover,
+.youtube-icon:hover{
+    background-color: rgb(205, 203, 203);
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+.search-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+
+.voice-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.voice-button:hover .tooltip{
+    opacity: 1;
+}
+
+.upload-icon .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.upload-icon:hover .tooltip{
+    opacity: 1;
+}
+
+.side-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-icon:hover{
+    background-color: rgb(201, 198, 198);
+}
+
+.you-icon .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.you-icon:hover .tooltip{
+    opacity: 1;
+}
+
+.not-icon .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.not-icon:hover .tooltip{
+    opacity: 1;
+}
+
+
+.bro-code-image{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.bro-chanell{
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.chanell-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    justify-content: center;
+    font-size: 14px;
+    justify-content: space-evenly;
+}
+
+.videogrid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    row-gap: 40px;
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
+
+.bro-code{
+    width: 300px;
+}
+
+.chanell-title{
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+}
+
+.bro-chanell{
+    display: flex;
+    flex-direction: row;
+}
