@@ -190,6 +190,26 @@ p{
     border-radius: 50%;
 }
 
+@media (max-width: 750px){
+    .videogrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+    .videogrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .videogrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
 
 .sidebar-icon{
     height: 74px;
@@ -370,6 +390,7 @@ p{
 
 .bro-code{
     width: 300px;
+    border-radius: 10px;
 }
 
 .chanell-title{
