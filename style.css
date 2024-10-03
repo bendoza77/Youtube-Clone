@@ -13,6 +13,16 @@ body{
 
 .phyton{
     width: 100%;
+    border-radius: 10px;
+}
+
+.time1{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
 }
 
 .search-bar{
@@ -66,6 +76,7 @@ p{
 
 .phyton-row{
     margin-bottom: 10px;
+    position: relative;
 }
 
 
@@ -190,8 +201,9 @@ p{
     border-radius: 50%;
 }
 
-@media (max-width: 750px){
-    .videogrid{
+@media (max-width: 460px){
+    .videogrid,
+    .video-previwe{
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -208,6 +220,15 @@ p{
     }
 }
 
+
+.time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    font-size: 12px;
+    right: 5px;
+    bottom: 8px;
+}
 
 
 
