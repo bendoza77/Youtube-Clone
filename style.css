@@ -6,8 +6,8 @@ body{
     padding: 80px;
     font-family: Roboto, serif;
     padding-top: 80px;
-    padding-left: 80px;
     padding-right: 160px;
+    padding-left: 80px;
 }
 
 
@@ -268,6 +268,7 @@ p{
     background-color: white;
     margin-top: -25px;
     margin-left: -10px;
+    transition: 0.5s;
 }
 
 .profile-picture{
@@ -438,10 +439,105 @@ p{
     color: white;
     position: absolute;
     font-size: 12px;
-    right: 45px;
+    right: 30px;
     bottom: 8px;
 }
 
+.home-bottom{
+    background-color: black;
+    width: 48px;
+    height: 48px;
+    margin-left: 250px;
+    margin-top: 10px;
+    background-color: white;
+    font-weight: 500;
+    color: rgb(100, 98, 98);
+}
+
+.video-bottom{
+    background-color: black;
+    width: 49px;
+    height: 48px;
+    margin-left: 250px;
+    margin-top: 10px;
+    background-color: white;
+    font-weight: 500;
+    color: black;
+    text-decoration: 2px solid underline black;
+}
+
+.pages{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    margin-top: 20px;
+    column-gap: 15px;
+    margin-left: -20px;
+    border-bottom: 1px solid rgb(239, 236, 236);
+    z-index: 250;
+    height: 40px;
+    width: 3000px;
+
+}
+
+.latest{
+    background-color: black;
+    width: 48px;
+    height: 48px;
+    margin-left: 250px;
+    margin-top: 10px;
+    width: 62px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.popular{
+    background-color: rgb(234, 230, 230);
+    width: 72px;
+    height: 32px;
+    margin-left: 245px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: black;
+}
+
+.oldest{
+    background-color: rgb(234, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 32px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 48px;
+    margin-left: 250px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: black;
+}
+
+.page-time{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    margin-top: 20px;
+    column-gap: 30px;
+    margin-top: 5px;
+    margin-left: -20px;
+}
 
 
 .sidebar-icon{
@@ -577,7 +673,7 @@ p{
     background-size: auto;
     width: 170px;
     font-weight: 400;
-    z-index: 250;
+    z-index: 260;
 }
 
 
@@ -613,6 +709,20 @@ p{
     bottom: -30px;
     opacity: 0;
     transition: 0.4s;
+}
+
+
+.list div:hover{
+    background-color: rgb(225, 222, 222);
+}
+
+.list div{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.list p{
+    cursor: pointer;
 }
 
 .search-button:hover .tooltip{
@@ -705,12 +815,35 @@ p{
     width: 160px;
     height: 160px;
     border-radius: 50%;
+    margin-left: 120px;
+    margin-top: -10px;
 }
 
 .bro-chanell{
     margin-top: 20px;
     margin-left: 120px;
+    width: 1200px;
 }
+
+.sub-button{
+    width: 94px;
+    height: 36px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.bro-code-chaneel{
+    margin-left: 235px;
+    margin-top: -25px;
+}
+
+
 
 .chanell-info{
     display: flex;
@@ -718,15 +851,16 @@ p{
     margin-left: 30px;
     justify-content: center;
     font-size: 14px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .videogrid1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     row-gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 110px;
+    margin-left: 200px;
 }
 
 
@@ -739,6 +873,12 @@ p{
     font-size: 40px;
     color: black;
     font-weight: 700;
+}
+
+.hello-bro{
+    width: 109%;
+    border-radius: 20px;
+    height: 220px;
 }
 
 .bro-chanell{
